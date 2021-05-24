@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="base.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <form>
+        <p>Password length:</p><br>
+        <input type="range" id="slider" min="8" max="32" value="20" name="slider">
+        <label id="slider_output" for="slider"></label><br>
+        <input type="checkbox" id="l_case" name="l_case" value="Lower Case">
+        <label for="l_case">a-z</label><br> 
+        <input type="checkbox" id="u_case" name="u_case" value="Upper Case">
+        <label for="u_case">A-Z</label><br> 
+        <input type="checkbox" id="numbers" name="numbers" value="Numbers">
+        <label for="numbers">0-9</label><br> 
+        <input type="checkbox" id="s_char" name="s_char" value="Special Characters">
+        <label for="s_char">&@%...</label><br> 
+        <button type="submit" value="submit">Generate</button>
+    </form>
+</body>
+</html>
