@@ -12,17 +12,19 @@
     <h2><span>Password</span> Generator</h2>
     <div id="line"></div>
     <form>
-        <p>Password length:</p><br>
-        <input type="range" min="8" max="32" value="8" name="slider" oninput="updateOutput(this.value);">
-        <label id="slider_output" for="slider">8</label><br>
-        <input type="checkbox" id="l_case" name="l_case" value="Lower Case">
-        <label for="l_case">a-z</label><br> 
-        <input type="checkbox" id="u_case" name="u_case" value="Upper Case">
-        <label for="u_case">A-Z</label><br> 
-        <input type="checkbox" id="numbers" name="numbers" value="Numbers">
-        <label for="numbers">0-9</label><br> 
-        <input type="checkbox" id="s_char" name="s_char" value="Special Characters">
-        <label for="s_char">&@%...</label><br> 
+        <div>
+            <input type="text" id="textPassword"></input><br>
+            <input type="range" min="8" max="32" value="8" name="slider" oninput="updateOutput(this.value);"><br>
+            <label id="slider_output" for="slider">Password length: <span>8</span></label><br>
+            <input type="checkbox" id="l_case" name="l_case" value="Lower Case">
+            <label for="l_case">a-z</label><br> 
+            <input type="checkbox" id="u_case" name="u_case" value="Upper Case">
+            <label for="u_case">A-Z</label><br> 
+            <input type="checkbox" id="numbers" name="numbers" value="Numbers">
+            <label for="numbers">0-9</label><br> 
+            <input type="checkbox" id="s_char" name="s_char" value="Special Characters">
+            <label for="s_char">&@%...</label><br> 
+        </div>
         <button type="submit" value="submit">Generate</button>
     </form>
     </div>

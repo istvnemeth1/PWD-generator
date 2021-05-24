@@ -1,4 +1,4 @@
 
 function updateOutput(val) {
-    document.getElementById("slider_output").innerHTML = val;
+    document.querySelector("#slider_output span").innerHTML = val;
 };

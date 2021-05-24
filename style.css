@@ -27,5 +27,25 @@ h2 span {
 form {
     /* border: 1px solid black; */ 
     max-width: 1024px;
-    margin: auto;
+}
+
+form div {
+    padding: 15px;
+    line-height: 30px;
+}
+
+#textPassword {
+    width: 80%;
+}
+
+button {
+    font-size: medium;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: rgba(170, 0, 0, 1);
+}
+
+button:hover {
+    background-color: rgba(170, 0, 0, 0.8);
 }
