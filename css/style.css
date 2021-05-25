@@ -30,5 +30,25 @@ div #form{
 }
 
 #textPassword {
-    width: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.textLine {
+    display: flex;
+    align-items:center;
+    justify-self: flex-end;
+}
+
+.gg {
+    display: flex;
+    justify-items: flex-end;
+}
+
+[class^="gg-"] {
+    --ggs: 1.5;    /* Size of the little icons */
+}
+
+[type="range"] {
+    width: 250px;
 }
