@@ -1,8 +1,3 @@
-/* Shows the value of the slider */
-function updateOutput(val) {
-    document.querySelector("#slider_output span").innerHTML = val;
-};
-
 /* Copy button */
 function copyButton(objId) {
     deSelect();
@@ -16,7 +11,6 @@ function copyButton(objId) {
         range.selectNode(document.getElementById(objId));
         window.getSelection().addRange(range);
     }
-    // objId.setSelectionRange(0, 99999); /* For mobile devices */
     document.execCommand("copy");
     var pwd = document.getElementById(objId).innerHTML;
     alert("Copied the text: " + pwd);
@@ -28,3 +22,22 @@ function deSelect() {
     else if (window.getSelection)
         window.getSelection().removeAllRanges();
 };
+
+/* Shows the value of the slider */
+function updateOutput(val) {
+    document.querySelector("#slider_output span").innerHTML = val;
+};
+
+// Helper functions
+function random(val) {
+    Math.floor(Math.random()*val);
+};
+
+// Password Generation
+function generate() {
+    var checkBoxNum = Boolean;
+    var checkBoxLowC = Boolean;
+    var checkBoxUppC = Boolean;
+    var checkBoxSpecC = Boolean;
+}
+
