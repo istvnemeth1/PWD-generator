@@ -43,6 +43,7 @@ div #form{
 .gg {
     display: flex;
     justify-items: flex-end;
+    margin: 0 5%;
 }
 
 [class^="gg-"] {
