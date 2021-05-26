@@ -42,10 +42,6 @@ function generate() {
     const abc = "abcdefghijklmnopqrstuvwxyz";
     const spec = "!£$%^&*~@:?><_+=-/.,#';";
     const num = "1234567890";
-    // const cbuc = Array.from(abc.toUpperCase());
-    // const cblc = Array.from(abc);
-    // const cbn = Array.from(num);
-    // const cbsc = Array.from(spec);
     const l_case = document.getElementById("l_case");
     const u_case = document.getElementById("u_case");
     const numbers = document.getElementById("numbers");
@@ -66,7 +62,6 @@ function generate() {
     } else {
         alert("you need to check a checkbox.");
     }
-    // console.log(document.getElementById('textPassword').innerHTML);
     document.getElementById('textPassword').innerHTML = password;
     console.log(password.length);
 }
